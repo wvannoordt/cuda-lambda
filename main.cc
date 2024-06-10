@@ -27,8 +27,7 @@ inline auto generic_function()
     return 0;
 }
 
-// template <std::integral... is_t>
-inline void variadic_function(const auto&... is)
+inline void variadic_function(const std::integral auto&... is)
 {
     // auto l = [=] __host__ __device__ (int){return int(is + ...);}; //Will not compile
 }
